@@ -56,15 +56,15 @@ function createOfGallery(galleryItems) {
   return galleryItems
   .map(({original, preview, description}) => {
     return `<div class="gallery__item">
-       <a class="gallery__link" ${original} ">
-         <img
-           class="gallery__image"
-           src="${preview}"
-           data-source="${original}"
-           alt="${description}"
-         />
-       </a>
-     </div>`;
+         <a class="gallery__link" ${original} ">
+           <img
+             class="gallery__image"
+             src="${preview}"
+             data-source="${original}"
+             alt="${description}"
+           />
+         </a>
+       </div>`;
   }).join('');
 } 
 galleryContainer.insertAdjacentHTML('beforeend', galleryCardsSet);
