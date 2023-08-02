@@ -19,6 +19,7 @@ function createOfGallery(galleryItems) {
     })
     .join("");
 }
+
 galleryContainer.insertAdjacentHTML("beforeend", galleryCardsSet);
 galleryContainer.addEventListener("click", selectGalleryEl);
 
